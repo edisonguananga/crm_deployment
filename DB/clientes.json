@@ -1,0 +1,6 @@
+{"_id":{"$oid":"62509b62212b32b66be540c5"},"nombre":"Edison","apellido":"Guananga","empresa":"Sigecon Software Cia Ltda","email":"edison@mail.com","telefono":"0984565002","__v":0}
+{"_id":{"$oid":"62509be4212b32b66be540c7"},"nombre":"Dennis","apellido":"Guananga","empresa":"Sigecon Software Cia Ltda","email":"dennis@mail.com","telefono":"0984565002","__v":0}
+{"_id":{"$oid":"62509bf2212b32b66be540c9"},"nombre":"Daniela","apellido":"Guananga","empresa":"Sigecon Software Cia Ltda","email":"daniela@mail.com","telefono":"0984565002","__v":0}
+{"_id":{"$oid":"6257678af91c85ed4ff1761a"},"nombre":"Samia","apellido":"Ayala","empresa":"Fopeca","email":"samia@correo.com","telefono":"094561238","__v":0}
+{"_id":{"$oid":"62582064e6a8987c5627ec6a"},"nombre":"Juan","apellido":"Pérez","empresa":"Sigecon Software Cia Ltda","email":"juan@correo.com","telefono":"0912343221","__v":0}
+{"_id":{"$oid":"62597c4db0c67d5f307a9af7"},"nombre":"Jair","apellido":"Ramírez","empresa":"Ecuacopia Cia Ltda","email":"jair@correo.com","telefono":"0976546554","__v":0}
