@@ -26,6 +26,10 @@ const clientesSchema = new Schema({
     }
 });
 
+<<<<<<< HEAD
 module.exports = mongoose.model('Clientes',clientesSchema)
 
 // Se aumenta comentario para que se actualice todos los archivos en GITHUB
+=======
+module.exports = mongoose.model('Clientes',clientesSchema)
+>>>>>>> 6b0582adae9bb21f806aad600841f92d361aff6e
