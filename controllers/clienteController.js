@@ -19,6 +19,7 @@ exports.nuevoCliente = async (req,res,next) => {
 exports.mostrarClientes = async (req,res,next) => {
     try {
         const clientes = await Clientes.find({});
+        console.log(clientes);
         res.json(clientes);
     } catch (error) {
         console.log(error);
@@ -61,8 +62,5 @@ exports.eliminarCliente = async(req,res,next) => {
         next();
     }
 }
-<<<<<<< HEAD
 
 // Se aumenta comentario para que se actualice todos los archivos en GITHUB
-=======
->>>>>>> 6b0582adae9bb21f806aad600841f92d361aff6e

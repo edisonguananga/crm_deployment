@@ -27,15 +27,10 @@ app.use(bodyParser.urlencoded({extended: true}));
 // Definir un dominio(s) para recibir las peticiones
 //const whitelist = ['http://localhost:3000']
 const whitelist = [process.env.FRONTEND_URL];
-<<<<<<< HEAD
 //console.log(whitelist);
 const corsOptions = {
     origin: (origin, callback) => {
         //console.log(origin);
-=======
-const corsOptions = {
-    origin: (origin, callback) => {
->>>>>>> 6b0582adae9bb21f806aad600841f92d361aff6e
         //Revisar si la petición viene de un servidor que esta en whitelist
         const existe = whitelist.some(dominio => dominio === origin);
         if (existe) {
@@ -46,17 +41,13 @@ const corsOptions = {
     }
 }
 
-<<<<<<< HEAD
-// Habilitar cors
-app.use(cors(corsOptions));
-//app.use(cors({
-    //origin:'*'
-//}))
-=======
 
 // Habilitar cors
-app.use(cors(corsOptions));
->>>>>>> 6b0582adae9bb21f806aad600841f92d361aff6e
+//app.use(cors(corsOptions));
+app.use(cors({
+    origin:'*'
+}))
+
 
 //Rutas de la app
 app.use('/', routes());
@@ -68,9 +59,7 @@ const port = process.env.PORT || 5000;
 //app.listen(5000);
 app.listen(port, host, () => {
     console.log('El servidor esta funcionando')
+    console.log('En el host ',host,' en el puerto ',port);
 });
-<<<<<<< HEAD
 
 // Se aumenta comentario para que se actualice todos los archivos en GITHUB
-=======
->>>>>>> 6b0582adae9bb21f806aad600841f92d361aff6e
