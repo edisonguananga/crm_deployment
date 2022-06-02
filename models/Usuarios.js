@@ -20,4 +20,3 @@ const usuariosSchema = new Schema ({
 
 module.exports = mongoose.model('Usuarios', usuariosSchema);
 
-// Se aumenta comentario para que se actualice todos los archivos en GITHUB

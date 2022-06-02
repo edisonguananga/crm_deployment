@@ -4,7 +4,7 @@ module.exports = (req, res, next) => {
 
     // autorizacion por el header
     const authHeader = req.get('Authorization');
-    console.log(authHeader);
+    //console.log(authHeader);
 
     if(!authHeader) {
         const error = new Error('No autenticado, no hay JWT');
@@ -30,5 +30,3 @@ module.exports = (req, res, next) => {
 
     next();
 }
-
-// Se aumenta comentario para que se actualice todos los archivos en GITHUB

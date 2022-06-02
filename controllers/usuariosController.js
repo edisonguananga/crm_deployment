@@ -2,7 +2,6 @@ const Usuarios = require('../models/Usuarios');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
 
-
 exports.registrarUsuario = async (req, res) => {
     // leer los datos del usuario y colocarlos en Usuarios
     const usuario = new Usuarios(req.body);
@@ -49,4 +48,3 @@ exports.autenticarUsuario = async (req, res, next) => {
     }
 }
 
-// Se aumenta comentario para que se actualice todos los archivos en GITHUB

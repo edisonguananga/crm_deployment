@@ -4,7 +4,6 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 require('dotenv').config({ path: 'variables.env'});
 
-
 // Cors permite que un cliente se conecte a otro servidor para el intercambio de recursos
 const cors = require('cors');
 
@@ -41,13 +40,11 @@ const corsOptions = {
     }
 }
 
-
 // Habilitar cors
 //app.use(cors(corsOptions));
 app.use(cors({
     origin:'*'
 }))
-
 
 //Rutas de la app
 app.use('/', routes());
@@ -61,5 +58,3 @@ app.listen(port, host, () => {
     console.log('El servidor esta funcionando')
     console.log('En el host ',host,' en el puerto ',port);
 });
-
-// Se aumenta comentario para que se actualice todos los archivos en GITHUB

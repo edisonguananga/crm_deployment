@@ -23,9 +23,22 @@ const clientesSchema = new Schema({
     telefono: {
         type: String,
         trim: true
+    },
+    vendedor: {
+        type: String,
+        trim: true
+    },
+    latitud: {
+        type: String,
+        trim: true
+    },
+    longitud: {
+        type: String,
+        trim: true
+    },
+    imagen : {
+        type: String
     }
 });
 
 module.exports = mongoose.model('Clientes',clientesSchema)
-
-// Se aumenta comentario para que se actualice todos los archivos en GITHUB
